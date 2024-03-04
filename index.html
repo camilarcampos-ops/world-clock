@@ -12,7 +12,9 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <title>World Clock ⏰</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+    <title>World Clock ⏰ - Camila Rodrigues Campos</title>
   </head>
 
   <body>
@@ -20,25 +22,25 @@
       <h1>World Clock</h1>
       <select>
         <option value="">Select a city</option>
-        <option value="">Vancouver 🇨🇦</option>
-        <option value="">Rio de Janeiro 🇧🇷</option>
-        <option value="">Istambul 🇹🇷</option>
-        <option value="">Tokyo 🇯🇵</option>
+        <option value="current">My current location</option>
+        <option value="America/Vancouver">Vancouver 🇨🇦</option>
+        <option value="America/Sao Paulo">Rio de Janeiro 🇧🇷</option>
+        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
       </select>
 
-      <div class="city">
+      <div class="city" id="los-angeles">
         <div>
           <h2>Los Angeles 🇺🇸</h2>
-          <div class="date">March 04th 2024</div>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:15 <small> AM </small></div>
+        <div class="time">></div>
       </div>
-      <div class="city">
+      <div class="city" id="paris">
         <div>
           <h2>Paris 🇫🇷</h2>
-          <div class="date">March 04th 2024</div>
+          <div class="date"></div>
         </div>
-        <div class="time">1:48:15 <small> AM </small></div>
+        <div class="time"></div>
       </div>
     </div>
 
