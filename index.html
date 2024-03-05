@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="icon" type="image/webp" href="images/favicon-crc.webp" />
     <link rel="stylesheet" href="src/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,14 +19,16 @@
 
   <body>
     <div class="container">
-      <h1>World Clock</h1>
-      <select id="city">
-        <option value="">Select a city</option>
-        <option value="current">My current location</option>
-        <option value="America/Vancouver">Vancouver 🇨🇦</option>
-        <option value="America/Sao Paulo">Rio de Janeiro 🇧🇷</option>
-        <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
-      </select>
+      <h1>🌎 World Clock 🕐</h1>
+      <div class="custom-select">
+        <select id="city">
+          <option value="">Select a city...</option>
+          <option value="current">My current location 📍</option>
+          <option value="America/Vancouver">Vancouver 🇨🇦</option>
+          <option value="America/Sao_Paulo">Sao Paulo 🇧🇷</option>
+          <option value="Asia/Tokyo">Tokyo 🇯🇵</option>
+        </select>
+      </div>
 
       <div id="cities">
         <div class="city" id="los-angeles">
@@ -43,16 +45,25 @@
           </div>
           <div class="time"></div>
         </div>
+        <div class="city" id="sydney">
+          <div>
+            <h2>Sydney 🇦🇺</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </div>
       </div>
     </div>
 
     <footer>
       <div class="signature">
         <p>
-          <a href="https://github.com/camilarcampos-ops/" style="color: #885df1"
+          <a
+            href="https://github.com/camilarcampos-ops/world-clock"
+            style="color: #885df1"
             ><strong>Open-source code,</strong></a
           >
-          by Camila Rodrigues
+          by Camila Rodrigues Campos
         </p>
       </div>
     </footer>
